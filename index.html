@@ -7,6 +7,7 @@
     
     <link rel='stylesheet' href='./styles/reset.css'>
     <link rel='stylesheet' href='./styles/style.css'>
+    <link rel="stylesheet" href="./styles/media_styles.css">
 
     <title>Decodificador</title>
   </head>
@@ -26,21 +27,31 @@
         </div>
 
         <!-- aviso -->
-        <div>
-          <p>ícone</p>
+        <div class="conteudo__aviso">
+          <img class="conteudo__icone" src="./assets/icon-exclamation.svg" alt="icone de aviso"/>
           <p>Apenas letras minúsculas e sem acento</p>
         </div>
 
         <!-- botoes -->
         <div class="conteudo__entrada__botoes">
-          <div>Criptografar</div>
-          <div>Descriptografar</div>
+          <button 
+            class="botao botao__encriptar"
+          >
+            Criptografar
+          </button>
+          <button 
+            class="botao desativado" 
+          >
+          Descriptografar
+          </button>
         </div>
       </section>
+
+
       <!-- conteúdo de saída -->
       <section class="conteudo__saida">
         <article class="conteudo__saida__principal">
-          <img src="./assets/High quality products 1 1.svg"/>
+          <img class="conteudo__saida__imagem" src="./assets/High quality products 1 1.svg"/>
           <h2>Nenhuma mensagem encontrada</h2>
           <h3>Digite um texto que você deseja criptografar ou descriptografar.</h3>
         </article>
