@@ -1,12 +1,10 @@
 @media (max-width: 800px) {
-  body{
-    display: flex;
+  .grupo__conteudo__cabecalho{
     flex-direction: column;
-    padding: 40px;
+    gap: 1.5rem;
   }
 
   .cabecalho {
-    align-items: center;
     justify-content: left;
   }
 
@@ -30,6 +28,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
+
   }
 
   .conteudo__saida__principal{
@@ -41,6 +41,7 @@
   .conteudo__saida__secundario{
     width: 100%;
     min-height: 400px;
+    max-height: 500px;
   }
 
   .botao{
@@ -49,6 +50,9 @@
 }
 
 @media (max-width: 376px){
+  .grupo__conteudo__cabecalho{
+    padding-bottom: 200px;
+  }
   .cabecalho{
     height: 96px;
   }
@@ -63,12 +67,6 @@
     align-items: center;
   }
 
-  .botao{
-    width: 100%;
-  }
-
-
-
   .conteudo__saida__principal{
     width: 327px;
     height: fit-content;
@@ -80,6 +78,7 @@
     height: 122px;
     gap: 0.8rem;
   }
+
   h2{
     line-height: 20px;
     font-size: 22px;

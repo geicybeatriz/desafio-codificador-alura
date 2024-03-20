@@ -12,62 +12,67 @@
     <title>Decodificador</title>
   </head>
   <body>
-    <header class="cabecalho">
-      <img src="./assets/Vector.svg" alt="logo da alura"/>
-    </header>
-    <main class="conteudo">
-      <section class="conteudo__entrada">
-        <!-- campo de texto  -->
-        <div class="conteudo__entrada__campo">
-          <textarea 
-            id="conteudo__entrada__textarea"
-            name="textarea" 
-            class="conteudo__entrada__textarea" 
-            placeholder="Digite seu texto..."
-          ></textarea>
-        </div>
-
-        <!-- aviso -->
-        <div class="conteudo__aviso">
-          <img class="conteudo__icone" src="./assets/icon-exclamation.svg" alt="icone de aviso"/>
-          <p>Apenas letras minúsculas e sem acento</p>
-        </div>
-
-        <!-- botoes -->
-        <div class="conteudo__entrada__botoes">
-          <button 
-            id="criptografar"
-            class="botao botao__encriptar"
-            onclick="buscarMensagemParaCriptografia()"
-          >
-            Criptografar
-          </button>
-          <button 
-            id="descriptografar"
-            class="botao botao__descriptar"
-            onclick="buscarMensagemParaDescriptografia()"
-            disabled
-          >
-          Descriptografar
-          </button>
-        </div>
-      </section>
-
-
-      <!-- conteúdo de saída -->
-      <section class="conteudo__saida">
-        <article id="conteudo__resultado__imagem" class="conteudo__saida__principal">
-          <img class="conteudo__saida__imagem" src="./assets/High quality products 1 1.svg"/>
-          <div class="conteudo__saida__principal__texto">
-            <h2>Nenhuma mensagem encontrada</h2>
-            <h3>Digite um texto que você deseja criptografar ou descriptografar.</h3>
+    <div class="grupo__conteudo__cabecalho">
+      <header class="cabecalho">
+        <img src="./assets/Vector.svg" alt="logo da alura"/>
+      </header>
+      <main class="conteudo">
+        <section class="conteudo__entrada">
+          <!-- campo de texto  -->
+          <div class="conteudo__entrada__campo">
+            <textarea 
+              id="conteudo__entrada__textarea"
+              name="textarea" 
+              class="conteudo__entrada__textarea" 
+              placeholder="Digite seu texto..."
+            ></textarea>
           </div>
-        </article>
-        <article id="conteudo__resultado__texto" class="conteudo__saida__secundario"></article>
-      </section>
-
-    </main>
-    <footer class="conteudo__escondido"></footer>
+  
+          <!-- aviso -->
+          <div class="conteudo__aviso">
+            <img class="conteudo__icone" src="./assets/icon-exclamation.svg" alt="icone de aviso"/>
+            <p>Apenas letras minúsculas e sem acento</p>
+          </div>
+  
+          <!-- botoes -->
+          <div class="conteudo__entrada__botoes">
+            <button 
+              id="criptografar"
+              class="botao botao__encriptar"
+              onclick="buscarMensagemParaCriptografia()"
+            >
+              Criptografar
+            </button>
+            <button 
+              id="descriptografar"
+              class="botao botao__descriptar"
+              onclick="buscarMensagemParaDescriptografia()"
+              disabled
+            >
+            Descriptografar
+            </button>
+          </div>
+        </section>
+  
+  
+        <!-- conteúdo de saída -->
+        <section class="conteudo__saida">
+          <article id="conteudo__resultado__imagem" class="conteudo__saida__principal">
+            <img class="conteudo__saida__imagem" src="./assets/High quality products 1 1.svg"/>
+            <div class="conteudo__saida__principal__texto">
+              <h2>Nenhuma mensagem encontrada</h2>
+              <h3>Digite um texto que você deseja criptografar ou descriptografar.</h3>
+            </div>
+          </article>
+          <article id="conteudo__resultado__texto" class="conteudo__saida__secundario"></article>
+        </section>
+  
+      </main>
+    </div>
+    
+    <footer class="rodape conteudo__escondido">
+      <p class="rodape__conteudo">Desenvolvido por Geicy Beatriz</p>
+    </footer>
     <script src="./scripts/app.js"></script>
   </body>
 </html>
