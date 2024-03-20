@@ -40,10 +40,11 @@
   }
   .conteudo__saida__secundario{
     width: 100%;
-    max-height: 400px;
-    text-wrap: wrap;
-    text-overflow: ellipsis;
-    background-color: blueviolet;
+    min-height: 400px;
+  }
+
+  .botao{
+    width: 90%;
   }
 }
 
@@ -65,6 +66,8 @@
   .botao{
     width: 100%;
   }
+
+
 
   .conteudo__saida__principal{
     width: 327px;
