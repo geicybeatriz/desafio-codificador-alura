@@ -11,8 +11,10 @@ function buscarMensagemParaCriptografia() {
   if (!textoEValido) {
     alert("O texto não pode conter letras maiúsculas e acentuação!");
     textoOriginal = "";
+    desabilitarBotao();
   }
   textoCriptografado = criptografarTexto(textoOriginal);
+  desabilitarBotao();
   renderizacaoCondicionalDeResultado();
 }
 
@@ -89,4 +91,16 @@ function copiarResultadoParaAreaDeTransferencia() {
         "Erro ao copiar texto para a área de transferência. Por favor, tente novamente."
       );
     });
+}
+
+function buscarMensagemParaDescriptografia() {
+  textoOriginal = document.getElementById("conteudo__entrada__textarea").value;
+  textoCriptografado = descriptografarTexto(textoOriginal);
+  desabilitarBotao();
+  renderizacaoCondicionalDeResultado();
+}
+
+function desabilitarBotao() {
+  const botao = document.getElementById("descriptografar");
+  botao.disabled = textoOriginal.length === 0 ? true : false;
 }

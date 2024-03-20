@@ -121,7 +121,7 @@ body {
   background-color: var(--cor-secundaria-preenchimento);
 }
 
-.desativado{
+.botao__descriptar:disabled{
   background-color: var(--cor-terciaria-preenchimento);
 }
 
