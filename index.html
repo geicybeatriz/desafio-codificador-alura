@@ -20,6 +20,7 @@
         <!-- campo de texto  -->
         <div class="conteudo__entrada__campo">
           <textarea 
+            id="conteudo__entrada__textarea"
             name="textarea" 
             class="conteudo__entrada__textarea" 
             placeholder="Digite seu texto..."
@@ -36,6 +37,7 @@
         <div class="conteudo__entrada__botoes">
           <button 
             class="botao botao__encriptar"
+            onclick="buscarMensagemParaCriptografia()"
           >
             Criptografar
           </button>
@@ -50,20 +52,18 @@
 
       <!-- conteúdo de saída -->
       <section class="conteudo__saida">
-        <article class="conteudo__saida__principal  conteudo__escondido">
+        <article id="conteudo__resultado__imagem" class="conteudo__saida__principal">
           <img class="conteudo__saida__imagem" src="./assets/High quality products 1 1.svg"/>
           <div class="conteudo__saida__principal__texto">
             <h2>Nenhuma mensagem encontrada</h2>
             <h3>Digite um texto que você deseja criptografar ou descriptografar.</h3>
           </div>
         </article>
-        <article class="conteudo__saida__secundario ">
-          <div >Texto criptografado</div>
-          <button class="botao">Copiar</button>
-        </article>
+        <article id="conteudo__resultado__texto" class="conteudo__saida__secundario"></article>
       </section>
 
     </main>
     <footer class="conteudo__escondido"></footer>
+    <script src="./scripts/app.js"></script>
   </body>
 </html>
